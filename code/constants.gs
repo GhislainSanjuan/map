@@ -17,3 +17,11 @@ const scrJobImg = "https://cdn-icons-png.flaticon.com/512/3306/3306451.png"
 const listFoldersAndFiles=[]
 //Folder to checkfor new manual content  
 const RESSOURCES_FOLDER_ID="1NT1t7oo1Yx0vZ1es4ZwUzcDQZo2zFvxq"
+
+
+const LABEL = {
+  "labelId": "WzUFxg8JE4dfrGNtdtBWPeCKqqXqUkz06foSNNEbbFcb",
+  "ID_IRMA": {
+    "id": "7C67F7B8C7"
+  }
+}
