@@ -42,7 +42,7 @@ To use correctly the Apps script code you'll need to use the [Drive Label](https
 
 The Appsheet template : [MAP](https://www.appsheet.com//templates/Materials-by-Applications--Positions?appGuidString=cffb360e-f92c-4c28-97c0-26b2cf49c6d1)
 
-The Apps Script code : [MAP Code](https://github.com/GhislainSanjuan/map/)
+The Apps Script code : [MAP Code](https://github.com/GhislainSanjuan/map/tree/main/code)
 
 
 
