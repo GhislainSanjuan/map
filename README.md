@@ -36,6 +36,8 @@ This was the moment I decided to create one tool to rule…gather them all !
 
 ![architecture](https://github.com/GhislainSanjuan/map/blob/main/docs/architecture.png?raw=true)
 
+To use correctly the Apps script code you'll need to use the [Drive Label](https://developers.google.com/drive/labels/guides/overview?authuser=0) and [Drive V2](https://developers.google.com/apps-script/advanced/drive?authuser=0) services/APIs 
+
 ## Where you can get the precioussss ?
 
 The Appsheet template : [MAP](https://www.appsheet.com//templates/Materials-by-Applications--Positions?appGuidString=cffb360e-f92c-4c28-97c0-26b2cf49c6d1)
