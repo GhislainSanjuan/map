@@ -18,7 +18,7 @@ This was the moment I decided to create one tool to rule…gather them all !
 
 [An Appsheet application with the skills retrieved with Apps Script code from all the help center in different languages.](#) 
 
-## With this tool , you’ll have the power to :  
+## With this tool , you’ll have the power to  
 
 * Include documentation about any subject you want , not just Google Workspace
 
@@ -32,7 +32,18 @@ This was the moment I decided to create one tool to rule…gather them all !
 
 * No cost since Appsheet licence are now included in Google Workspace
 
+## Architecture
 
-![architecture](https://github.com/GhislainSanjuan/map/blob/main/architecture.ong?raw=true)
+![architecture](https://github.com/GhislainSanjuan/map/blob/main/architecture.png?raw=true)
+
+## Where you can get the precioussss ?
+
+The Appsheet template : [MAP](https://www.appsheet.com//templates/Materials-by-Applications--Positions?appGuidString=cffb360e-f92c-4c28-97c0-26b2cf49c6d1)
+
+The Apps Script code : [MAP Code](https://github.com/GhislainSanjuan/map/)
+
+
+
+
 
 
