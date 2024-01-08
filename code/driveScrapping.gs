@@ -6,7 +6,6 @@
 */
 function getDriveScrapData(){
   getFilesAndFolders(RESSOURCES_FOLDER_ID)
-  let testFiles=listFoldersAndFiles
   let driveScrapData=[]
   // If a label id is already in the database --> Update the title and the link 
   // If a label is in th database but not in the files labels list --> remove it from the database
@@ -18,7 +17,6 @@ function getDriveScrapData(){
     let dataForId=databaseDriveScrap.filter(x=>x[0]==t[0])[0]
     driveScrapData.push([t[0],dataForId[1],t[2],t[3],dataForId[4],t[5],dataForId[6],t[7]])
   })
-  driveScrapData=driveScrapData.concat(testFiles.filter(x=>databaseDriveScrapIds.indexOf(x[0])<0))
   return driveScrapData
 }
 
@@ -27,18 +25,17 @@ function getDriveScrapData(){
 /*******************************************************************************************************
 * This function gets all the files/folders main informations in the array 
 * ******************************************************************************************************
-* @param {} 
+* @param {string} folderId - the folder id to search
 * @return {} 
 */
 function getFilesAndFolders(folderId) {
 
-  try { 
-    let folderName = DriveApp.getFolderById(folderId).getName()
+   try { 
     let baseFolders = DriveApp.getFolderById(folderId).getFolders()
     listAllFoldersRecursive(baseFolders)
     let baseFiles = DriveApp.getFolderById(folderId).getFiles()
     listAllFiles(baseFiles)
-  }
+   }
   catch (e) {
     Logger.log(e)
   } 
@@ -49,19 +46,23 @@ function getFilesAndFolders(folderId) {
 /*******************************************************************************************************
 * This function add the file informations in a array from a list of files
 * ******************************************************************************************************
+* @param {string} files - the list of files to go through 
+* @return {} 
 */
 function listAllFiles(files) {
   while (files.hasNext()) {
     let file = files.next()
-    let idIRMA=getLabelField(file.getId(),LABEL.labelId ,LABEL.ID_IRMA.id)
+    let idMAP=getLabelField(file.getId(),LABEL.labelId ,LABEL.ID_MAP.id)
     //ID	PRODUCT	CHAPTER	SKILL	CATEGORIE	TYPE	LEVEL	LINK
-    listFoldersAndFiles.push([idIRMA,"",file.getParents().next().getName(), file.getName(),"","DriveScrapping","", file.getUrl()])
+    listFoldersAndFiles.push([idMAP,"",file.getParents().next().getName(), file.getName(),"","DriveScrapping","", file.getUrl()])
   }
 }
 
 /*******************************************************************************************************
 * This function add the file/folders informations in a array from a list of files/folders and do it in a recursive way
 * ******************************************************************************************************
+* @param {string} folder - the list of folders to go through 
+* @return {} 
 */
 function listAllFoldersRecursive(folders) {
   while (folders.hasNext()) {
