@@ -33,5 +33,6 @@ This was the moment I decided to create one tool to rule…gather them all !
 * No cost since Appsheet licence are now included in Google Workspace
 
 
+![architecture](https://github.com/GhislainSanjuan/map/blob/main/architecture.ong?raw=true)
 
 
