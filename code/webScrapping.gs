@@ -8,13 +8,7 @@ function extractHTML(url) {
   return UrlFetchApp.fetch(url).getContentText()
 }
 
-/**
- * Loop over the product help centers and extract the skills (chapter/article and their url )
- * This function runs in a trigger to update the product skill at a specific frequency
- * 
- * @param {} 
- * @return {} 
-**/
+
 /**
  * Loop over the product help centers and extract the skills (chapter/article and their url )
  * This function runs in a trigger to update the product skill at a specific frequency
@@ -24,7 +18,6 @@ function extractHTML(url) {
 **/
 function webScrapping() {
   let productSkillsData = []
-
   // List all the products from wich we need to extract the data
   let linksToScrap = PRODUCTS.getDataRange().getValues().slice(1).filter(x => x[0] != "")
   linksToScrap.forEach(function (t) {
@@ -88,8 +81,6 @@ function webScrapping() {
       productSkillsData.push(t)
     }
   })
-
-  
     return productSkillsData
 }
 
@@ -164,8 +155,9 @@ function scrapType2(idProduct, url, lang) {
   })
   return tableScrap
 }
+
 /**
- * Function to get the position of  the nth element in a text
+ * Function to get the position of the nth element in a text
  *
  * @param {string} text - the text where we will search the element
  * * @param {string} element - the text to search
@@ -191,16 +183,13 @@ function extractTextBetweenPos(text, start, number) {
 
 /**
  * Function to test error 404 on url i.e. to check if an url is valid or not
- *
  * @param {string} url 
-
  * @return {bool } true is url valid, if not false
 **/
 function fetchPage(url) {
   try {
     //Logger.log(url)
-    var response = UrlFetchApp.fetch(url, { muteHttpExceptions: true, 'followRedirects': false });
-
+    let response = UrlFetchApp.fetch(url, { muteHttpExceptions: true, 'followRedirects': false });
     if (response.getResponseCode() == 404) {
       return false
     }
