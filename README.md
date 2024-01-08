@@ -34,7 +34,7 @@ This was the moment I decided to create one tool to rule…gather them all !
 
 ## Architecture
 
-![architecture](https://github.com/GhislainSanjuan/map/blob/main/architecture.png?raw=true)
+![architecture](https://github.com/GhislainSanjuan/map/blob/main/docs/architecture.png?raw=true)
 
 ## Where you can get the precioussss ?
 
