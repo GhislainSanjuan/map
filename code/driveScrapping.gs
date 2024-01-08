@@ -1,5 +1,5 @@
 /*******************************************************************************************************
-* This function give the files list data to update in the database
+* This function gives the files list data to update in the database
 * ******************************************************************************************************
 * @param {} 
 * @return {} 
@@ -29,7 +29,6 @@ function getDriveScrapData(){
 * @return {} 
 */
 function getFilesAndFolders(folderId) {
-
    try { 
     let baseFolders = DriveApp.getFolderById(folderId).getFolders()
     listAllFoldersRecursive(baseFolders)
@@ -39,12 +38,11 @@ function getFilesAndFolders(folderId) {
   catch (e) {
     Logger.log(e)
   } 
-
 }
 
 
 /*******************************************************************************************************
-* This function add the file informations in a array from a list of files
+* This function adds the file informations in a array from a list of files
 * ******************************************************************************************************
 * @param {string} files - the list of files to go through 
 * @return {} 
@@ -59,7 +57,7 @@ function listAllFiles(files) {
 }
 
 /*******************************************************************************************************
-* This function add the file/folders informations in a array from a list of files/folders and do it in a recursive way
+* This function adds the file/folders informations in a array from a list of files/folders and do it in a recursive way
 * ******************************************************************************************************
 * @param {string} folder - the list of folders to go through 
 * @return {} 
