@@ -16,7 +16,7 @@ This was the moment I decided to create one tool to rule…gather them all !
 
 > MAP : Materials by Applications & Positions
 
-[An Appsheet application with the skills retrieved with Apps Script code from all the help center in different languages.](#) 
+`An Appsheet application with the skills retrieved with Apps Script code from all the help center in different languages`
 
 ## With this tool , you’ll have the power to  
 
