@@ -1,5 +1,5 @@
 /*******************************************************************************************************
-* This function send the communications through different channel
+* This function sends the communications through different channel
 * ******************************************************************************************************
 * @param {string} docUrl - the template Google Docs url used for the communication
 * @param {string} object - the communication subject
@@ -38,7 +38,7 @@ function sendComms(docUrl, objet, users, chatWebhooks, textChat, description, se
 }
 
 /*******************************************************************************************************
-* This function send a chat message via a webhook
+* This function sends a chat message via a webhook
 * ******************************************************************************************************
 * @param {string} textMsg - the text added to the message (in addition to the title and subtitle)
 * @param {string} commDoc - the document  used for the communication
@@ -91,7 +91,7 @@ function sendNotifToChat(textMsg, commDoc, webhooks, title, desc) {
 
 // 
 /*******************************************************************************************************
-* you can use this function everytime you will need to get the HTML content of a Google Docs fil
+* You can use this function everytime you will need to get the HTML content of a Google Docs fil
 * ******************************************************************************************************
 * @param {string} url - the template Google Docs url
 * @return {file} an HTML format to use in Gmail 
